@@ -15,6 +15,6 @@ public class DataBaseConnector {
     }
 
     public ResultSet getExecuteQuery( Statement statement) throws SQLException {
-        return statement.executeQuery("SELECT * FROM person WHERE sex = 'male' AND age > 18");
+        return statement.executeQuery("SELECT weight,height FROM person WHERE sex = 'male' AND age > 18");
     }
 }
